@@ -1,0 +1,24 @@
+mcdp {
+    M = instance mcdp {
+      requires r1 [dimensionless]
+      requires r2 [dimensionless]
+
+      provides f1 [dimensionless]
+
+      provided f1 <= required r1 * required r2
+    }
+    N = instance mcdp {
+      requires r1 [dimensionless]
+      requires r2 [dimensionless]
+
+      provides f1 [dimensionless]
+
+      provided f1 <= required r1 * required r2
+    }
+    provides M1 = f1 provided by M
+    requires R1 = r1 required by M
+    requires R2 = r2 required by M
+    provides NF1 = f1 provided by N
+    requires NR1 = r1 required by N
+    requires NR2 = r2 required by N
+ }

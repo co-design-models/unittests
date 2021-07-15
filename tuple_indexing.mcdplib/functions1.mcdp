@@ -1,0 +1,6 @@
+mcdp {
+	provides f [g x J]
+
+	take(provided f, 0) <= 10 g
+	take(provided f, 1) <= 50 J
+}

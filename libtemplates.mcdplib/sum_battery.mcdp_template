@@ -1,0 +1,13 @@
+# We can put two batteries together
+template [B1: `battery, B2: `battery]
+
+mcdp {
+   provides capacity [J]
+   requires mass [g]
+
+   b1 = instance B1
+   b2 = instance B2
+
+   provided capacity <= capacity provided by b1 + capacity provided by b2
+   required mass     >= mass required by b1    + mass required by b2
+}

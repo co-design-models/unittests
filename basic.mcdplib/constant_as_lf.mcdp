@@ -1,0 +1,12 @@
+
+mcdp {
+    provides out [V x A]
+    requires in  [V x A] 
+
+    required in >= < 0 V , take(provided out, 1) >
+
+    take(provided out, 0) <= Top V
+     
+    provided out <= < 100 V, Top A>
+}
+ 

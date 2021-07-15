@@ -1,0 +1,8 @@
+mcdp {
+    requires r [s × J] 
+        
+    provides f1 [s]
+        
+    provided f1 ≼ take(required r, 0)
+    take(required r, 1) ≽ 0 J
+}

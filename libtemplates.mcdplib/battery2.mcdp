@@ -1,0 +1,7 @@
+mcdp {
+	provides capacity [J]	
+	requires mass [g]
+
+	provided capacity <= 2 MJ
+	required mass >= 800 g
+}

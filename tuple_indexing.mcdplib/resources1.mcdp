@@ -1,0 +1,6 @@
+mcdp {
+    requires r [g x J]
+
+    required r >= < 10 g, 0 J>
+    required r >= < 0 g, 50 J>
+}
